@@ -52,8 +52,8 @@ const sendMail = (user, callback) => {
       port: 587,
       secure: false,
       auth: {
-        user: "anamika.india.anonymous@gmail.com",
-        pass: "ShashikanthDK@1234"
+        user: // your email address from which you want to send mail I removed this for saftey purpose
+        pass: // email pass word is here
       }
     }); 
 
@@ -64,7 +64,7 @@ const sendMail = (user, callback) => {
 
   else{
   const mailOptions = {
-    from: `anamika.india.anonymous@gmail.com`,
+    from: // your email address from which you want to send mail
     to: `<${user.email}>`,
     subject: `${user.subject}`,
     html: `${user.info}`
