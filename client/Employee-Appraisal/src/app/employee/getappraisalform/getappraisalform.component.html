@@ -1,0 +1,172 @@
+
+   <app-navbar></app-navbar>
+   
+   <div class="container" style="display:flex;justify-content: space-around ;flex-direction: column;  font-size: 0.2rem !important" *ngIf="form">
+      <mat-card class="my-4 " style="color: rgb(235, 22, 189);font-family: 'Acme', sans-serif;">
+       <mat-card-content style="display:flex;justify-content: space-evenly;">
+        <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+           <h6>Name : <span>{{form.employee_name}}</span></h6>
+           <h6>Position : <span>{{form.position}}</span></h6> 
+        </div>
+        <div style="display: flex;flex-direction: column; justify-content: space-between;">
+            <h6>Department : <span>{{form.department}}</span></h6>
+            <h6>Employee Id : <span>{{form.employeeid}}</span></h6> 
+        </div>
+       </mat-card-content>
+    </mat-card>
+
+
+    <mat-card class="my-4 " style="color: rgb(14, 61, 148);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Last update : <span>{{form.date_of_last_review|date}}</span></h6>
+            <h6>Type of review : <span>{{form.type_of_review}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+     <mat-card class="my-4 " style="color: rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Quality of work  : <span>{{form.quality_of_work}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_quality_of_service}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+
+
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Productivity : <span>{{form.productivity}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_productivity}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+    
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>knowledge of job  : <span>{{form.knowledge_of_job}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_knowledge_of_job}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Reliability/dependebility  : <span>{{form.reliability_and_dependebility}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_reliability_and_dependebility}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Attendence  : <span>{{form.attendence}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_attendence}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Quality of work  : <span>{{form.quality_of_work}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_quality_of_service}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Quality of work  : <span>{{form.quality_of_work}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_quality_of_service}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>initiative : <span>{{form.initiative}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_initiative}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Creativity  : <span>{{form.creativity}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_creativity}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Working Relationship  : <span>{{form.working_relationship}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_working_relationship}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Adherence To Compony Policy  : <span>{{form.adherence_to_compony_policy}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_adherence_to_compony_policy}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Other  : <span>{{form.other}}</span></h6>
+            <h6>Comment: <span>{{form.comment_on_other}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Overal Rating  : <span>{{form.overall_performence_rating}}</span></h6>
+            <h6>Comment: <span>{{form.supervisior_comment_on_overall_performence}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+
+     <mat-card class="my-4 " style="color:  rgb(18, 16, 114);font-family: 'Acme', sans-serif;">
+        <mat-card-content style="display:flex;justify-content: space-evenly;">
+         <div style="display: flex;flex-direction: column;  justify-content: space-between;">
+            <h6>Suggestion  : <span>{{form.action_by_employee_infuture}}</span></h6>
+            <h6>Date Reviewed: <span>{{form.date_reviewed_with_employee|date}}</span></h6> 
+         </div>
+        </mat-card-content>
+     </mat-card>
+  </div>
+
+  <div *ngIf="!form">
+   <div class="container my-4" >
+    <mat-card>
+        <mat-card-content style="color: red;">
+            <h2>Your appraisal form is not ready yet </h2>
+        </mat-card-content>
+    </mat-card>
+   </div>
+  </div>

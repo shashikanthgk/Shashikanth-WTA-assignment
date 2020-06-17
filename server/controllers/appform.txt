@@ -1,0 +1,38 @@
+{	        "employee_name": "shashikanthgk",
+            "position": "Manager",
+            "department": "software",
+            "org_name": "samsung",
+            "date_of_last_review": "2020-06-11 16:55:33",
+            "type_of_review": "Six Month Review",
+
+
+
+            "quality_of_work": "Outstanding",
+            "comment_on_quality_of_service":"No comment",
+            "productivity" : "Outstanding",
+            "comment_on_productivity":"No comment",
+            "knowledge_of_job": "Outstanding",
+            "comment_on_knowledge_of_job": "No comment",
+            "reliability_and_dependebility": "Outstanding",
+            "comment_on_reliability_and_dependebility": "No comment",
+            "attendence":"Outstanding",
+            "comment_on_attendence": "No comment",
+
+
+            "initiative":"Outstanding",
+            "comment_on_intiative": "No comment",
+            "creativity":"Outstanding",
+            "comment_on_creativity": "No comment",
+            "working_relationship": "Outstanding",
+            "comment_on_working_relationship": "No comment",
+            "adherence_to_compony_polocy": "Outstanding",
+            "comment_on_adherence_to_compony_polocy":"No comment",
+
+
+            "other": "Outstanding",
+            "comment_on_other": "no comment",
+            "overall_performence_rating":"Outstanding",
+            "supervisior_comment_on_overall_performence": "no comment",
+            "action_by_employee_infuture": "no comment",
+            "date_reviewed_with_employee": "2020-06-11 16:55:33",
+}

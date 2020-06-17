@@ -1,0 +1,436 @@
+<app-navbar></app-navbar>
+
+
+<div style="margin: 2rem;" *ngIf="form">
+
+    <mat-card style="display: flex;flex-direction: column;align-items: center;">
+        <div>
+            <h4 style="color: slateblue;">UPDATE APPRAISAL FORM</h4>
+
+        </div>
+    <form   [formGroup]="form">
+        <mat-card class="my-4 mx-4">
+        <div class="form-group">
+            <mat-form-field>
+                <input  matInput 
+                placeholder="Employee name"
+               formControlName="employee_name" type="text" [disabled]="true">
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <input [(value)]="eid" matInput placeholder="Employee id" rows="3" [disabled]="true" >
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Employee position</mat-label>
+                <mat-select  formControlName="position" [(ngModel)]="appform.position" >
+                    <mat-option value="Permanent">Permanent</mat-option>
+                    <mat-option value="Casual">Casual</mat-option>
+                    <mat-option value="trainees">trainees</mat-option>
+                    <mat-option value="staff">staff</mat-option>
+                    <mat-option value="Contractors">Contractors</mat-option>
+                    <mat-option value="Developer">Developer</mat-option>
+                    <mat-option value="Manager">Manager</mat-option>
+
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+
+            <mat-form-field>
+                <mat-label>Employee department</mat-label>
+                <mat-select  formControlName="department" >
+                    <mat-option value="Human Resources">Human Resources</mat-option>
+                    <mat-option value="IT">IT</mat-option>
+                    <mat-option value="Accounting and Finance">Accounting and Finance'</mat-option>
+                    <mat-option value="Marketing">Marketing</mat-option>
+                    <mat-option value="Research and Development">Research and Development</mat-option>
+                    <mat-option value="Production">Production</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Type Of Review</mat-label>
+                <mat-select  formControlName="type_of_review" [(ngModel)]="appform.type_of_review"  >
+                    <mat-option value="Six Month Review">Six Month Review</mat-option>
+                    <mat-option value="Annual Review">Annual Review</mat-option>
+                    <mat-option value="Other">Other</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </mat-card>
+
+
+    <mat-card class="my-4 mx-4">
+
+       <div style="padding-left: 0rem; color: purple;">
+        <h6>Quality Of Work</h6>
+       </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Quality Of Work</mat-label>
+                <mat-select  formControlName="quality_of_work" [(ngModel)]="appform.quality_of_work" >
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="comment_on_quality_of_service" matInput placeholder="Comment" rows="3"  ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+
+    <mat-card class="my-4 mx-4">
+
+        <div style="padding-left: 0rem; color: purple;">
+            <h6>Productivity</h6>
+           </div>
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Productivity</mat-label>
+                <mat-select  [value]="appform.productivity" formControlName="productivity" >
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="comment_on_productivity" matInput placeholder="Comment" rows="3"   ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+
+    <mat-card class="my-4 mx-4">
+        <div style="padding-left: 0rem; color: purple;">
+            <h6>Knowledge Of Job</h6>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Knowledge Of Job</mat-label>
+                <mat-select  formControlName="knowledge_of_job">
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="comment_on_knowledge_of_job" matInput placeholder="Comment" rows="3"   ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+    <mat-card class="my-4 mx-4">
+        <div style="padding-left: 0rem; color: purple;">
+            <h6>Knowledge Of Job</h6>
+        </div>
+
+
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Reliability And Dependebility</mat-label>
+                <mat-select  formControlName="reliability_and_dependebility">
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="comment_on_reliability_and_dependebility" matInput placeholder="Comment" rows="3"   ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+    <mat-card class="my-4 mx-4">
+
+        <div style="padding-left: 0rem; color: purple;">
+            <h6>Attendence</h6>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Attendence</mat-label>
+                <mat-select  formControlName="attendence" >
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="comment_on_attendence" matInput placeholder="Comment" rows="3"   ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+
+
+    <mat-card class="my-4 mx-4">
+
+        <div style="padding-left: 0rem; color: purple;">
+            <h6>Initiative</h6>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Initiative</mat-label>
+                <mat-select  formControlName="initiative" >
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="comment_on_initiative" matInput placeholder="Comment" rows="3"   ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+
+
+
+    <mat-card class="my-4 mx-4">
+
+        <div style="padding-left: 0rem; color: purple;">
+            <h6>Creativity</h6>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Creativity</mat-label>
+                <mat-select  formControlName="creativity">
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="comment_on_creativity" matInput placeholder="Comment" rows="3"   ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+
+
+
+    <mat-card class="my-4 mx-4">
+
+        <div style="padding-left: 0rem; color: purple;">
+            <h6>Working Relationship</h6>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Working Relationship</mat-label>
+                <mat-select  formControlName="working_relationship" >
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="comment_on_working_relationship" matInput placeholder="Comment" rows="3"   ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+
+
+
+    <mat-card class="my-4 mx-4">
+
+        <div style="padding-left: 0rem; color: purple;">
+            <h6>Adherence to compony policyndence</h6>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Adherence to compony policy</mat-label>
+                <mat-select  formControlName="adherence_to_compony_policy" >
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="comment_on_adherence_to_compony_policy" matInput placeholder="Comment" rows="3"   ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+
+    <mat-card class="my-4 mx-4">
+
+        <div style="padding-left: 0rem; color: purple;">
+            <h6>Other</h6>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Other</mat-label>
+                <mat-select   formControlName="other" >
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="comment_on_other" matInput placeholder="Comment" rows="3"   ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+
+
+    <mat-card class="my-4 mx-4">
+
+        <div style="padding-left: 0rem; color: purple;">
+            <h6>Overall performence</h6>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <mat-label>Overall performence</mat-label>
+                <mat-select  formControlName="overall_performence_rating" [(value)]="appform.overall_performence_rating" >
+                    <mat-option value="Outstanding">Outstanding</mat-option>
+                    <mat-option value="Very Good">Very Good</mat-option>
+                    <mat-option value="Good">Good</mat-option>
+                    <mat-option value="Below Average">Below Average</mat-option>
+                    <mat-option value="unsatisfactory">unsatisfactory</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="supervisior_comment_on_overall_performence" matInput placeholder="Comment" rows="3"   ></textarea>
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+    <mat-card class="my-4 mx-4">
+
+
+        <div class="form-group">
+            <mat-form-field>
+                <textarea formControlName="action_by_employee_infuture" matInput placeholder="Action By Employee in future" rows="3"   required></textarea>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="Date reviewed with employee" formControlName="date_reviewed_with_employee" required>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+
+
+    </form>
+
+<div style="display:flex; justify-content: space-around;" > 
+    <div style="padding-right:1rem;"> 
+        <button  mat-raised-button color='primary' (click)='onSubmit()' [disabled]="!form.valid">UPDATE</button>
+
+    </div>
+<div style="padding-right:1rem;">
+    <button style="padding-left:1rem;" mat-raised-button color='warn' (click)='delete()'>DELETE</button>
+
+</div>
+    
+</div>
+    
+
+</mat-card>
+
+</div>

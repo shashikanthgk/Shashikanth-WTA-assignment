@@ -1,0 +1,6 @@
+[
+    { "propName" :"quality_of_work","value":"Very Good",},
+    {"propName":"comment_on_quality_of_service","value":"some comment",},
+    {"propName":"attendence","value":"Very Good",},
+    {"propName":"comment_on_attendence","value": "some comment",}
+]

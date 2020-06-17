@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+
+
+<div class="container my-4">
+            <mat-list >
+                <mat-list-item>
+                    <span style="padding: 4rem;">Name</span>
+                    <span style="padding: 4rem;">Email</span>
+                    <span style="padding: 8rem;">Employee Id</span> 
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+                <mat-list-item *ngFor="let employee of employees;let i = index" style="display: flex;flex-direction: column;justify-content: space-evenly;">
+                    <span>{{employee.firstname}} {{employee.lastname}}</span>
+                    <span>{{employee.email}}</span>
+                    <span>{{employee.employeeid}}</span> 
+                    <span>
+                        <button  mat-raised-button color="primary" (click)="action(i)"><span >Edit</span></button>
+                        
+                    </span>
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+
+            </mat-list>
+</div>
+
